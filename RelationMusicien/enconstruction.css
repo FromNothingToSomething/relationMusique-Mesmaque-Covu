@@ -1,12 +1,94 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/3563173/pexels-photo-3563173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  /* Je mettrais en local Alex :) */
+  background-size: cover;
+  background-position: center;
+}
+li
+{
+  list-style: none;
 
-.typewriter {
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-      typewriter 4s steps(44) 1s 1 normal both,
-      blinkTextCursor 500ms steps(44) infinite normal;
-  }
-       
+}
+a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+a:hover 
+{
+  color: #63C7B2;
+
+}
+header
+{
+  position: relative;
+  padding: 0 2rem;
+  background-color: rgba(0,0,0,0.238);
+
+}
+.navbar
+{
+  width:100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.navbar .logo a 
+{
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.navbar .links
+{
+  display: flex;
+  gap: 2rem;
+}
+.navbar .burger-menu-button
+{
+  color:#fff;
+  font-size: 1.5rem;
+  cursor:pointer;
+  display: none;
+}
+.buttons
+{
+  display: flex;
+  gap: 10px;
+}
+.action-button-connect .action-button-signin 
+{
+  background-color: #63C7B2;
+  color: #120d31;
+  border: 1px solid #63C7B2;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-button-connect:hover
+{
+  color: #fff;
+  border: 1px solid #fff;
+}
+.action-button-signin
+{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
